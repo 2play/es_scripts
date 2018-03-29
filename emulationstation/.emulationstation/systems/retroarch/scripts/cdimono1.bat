@@ -14,7 +14,7 @@ SET arg1=%1
 :: This is the exact same command use originaly in es_systems.cfg execpt we feed mame_libretro 
 :: core the correct ROMPATH structure it needs to find our cdimono1 driver.
 :: A simpler way would be to put this command line directly in es_systems.cfg like so
-:: <command>%HOME%\.emulationstation\systems\retroarch\scripts\cdimono1.bat %BASENAME%.txt </command> 
+:: <command>%HOME%\.emulationstation\systems\retroarch\retroarch.exe -L %HOME%\.emulationstation\systems\retroarch\cores\mame_libretro.dll %BASENAME%.txt</command> 
 :: I have not tested it but cdimono1 doesn't deserve all that work to be honest :P. Once I've tested 
 :: I saw right away why this console never sold out lol.
 
