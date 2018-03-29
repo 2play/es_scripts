@@ -13,5 +13,9 @@ SET arg1=%1
 :: %~d0 is simply the system variable to identify the drive letter where the bat file resides.
 :: This is the exact same command use originaly in es_systems.cfg execpt we feed mame_libretro 
 :: core the correct ROMPATH structure it needs to find our cdimono1 driver.
+:: A simpler way would be to put this command line directly in es_systems.cfg like so
+:: <command>%HOME%\.emulationstation\systems\retroarch\scripts\cdimono1.bat %BASENAME%.txt </command> 
+:: I have not tested it but cdimono1 doesn't deserve all that work to be honest :P. Once I've tested 
+:: I saw right away why this console never sold out lol.
 
 %~d0\emulationstation\.emulationstation\systems\retroarch\retroarch.exe -L %~d0\emulationstation\.emulationstation\systems\retroarch\cores\mame_libretro.dll %ROMPATH%%arg1%.txt
