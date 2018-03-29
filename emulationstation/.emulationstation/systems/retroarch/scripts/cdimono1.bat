@@ -2,6 +2,7 @@
 
 :: We need to set some variables for our rom path. Edit accordingly.
 :: You can edit the folders if needed but usually all es installations are similar. 
+:: Use %BASENAME% without quotes to strip the rom name from the full path in es_systems.cfg.
 
 SET ROMPATH=%~d0\emulationstation\.emulationstation\roms\cdimono1\
 
